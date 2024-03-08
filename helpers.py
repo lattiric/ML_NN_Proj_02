@@ -57,6 +57,7 @@ def plot_history(hist,metric,show_val=True):
     plt.show()
 
 def generate_fine_tune_model():
+    
     input_ids = tf.keras.layers.Input(shape=(None,), dtype=tf.int32, name="input_ids")
     attention_mask = tf.keras.layers.Input(shape=(None,), dtype=tf.int32, name="attention_mask")
     token_type_ids = tf.keras.layers.Input(shape=(None,), dtype=tf.int32, name="token_type_ids")
